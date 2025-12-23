@@ -1,0 +1,11 @@
+from datetime import datetime
+print(datetime.now())
+print('Student name: Vatslav Zhdanovich')
+print('---------------------------------')
+name= input('Please enter your name: ')
+lowerName= name.lower()
+upperName= name.upper()
+lengthName= len(name)
+print('Your name converted to lowercase:',lowerName)
+print('Your name converted to uppercas:',upperName)
+print('There are',lengthName,'characters in your name.')
