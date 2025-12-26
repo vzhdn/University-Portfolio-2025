@@ -7,7 +7,8 @@ total_1= 0
 total_2= 0
 
 fieldnames= ['x_value','total_1','total_2']
-
+print("WARNING: Program will run until it is closed. To avoid exceeding memory and for best results, close program after 100 iterations")
+time.sleep(3)
 with open ('data.csv', 'w') as csv_file:
     csv_writer= csv.DictWriter(csv_file, fieldnames= fieldnames)
     csv_writer.writeheader()
@@ -23,10 +24,11 @@ while True:
             'total_2': total_2
         }
         csv_writer.writerow(info)
+
         print(x_value, total_1, total_2)
 
         x_value += 1
         total_1 = total_1 + random.randint(-60,90)
         total_2 = total_2 + random.randint(-40,100)
         
-        time.sleep(.5)
+        time.sleep(.1)

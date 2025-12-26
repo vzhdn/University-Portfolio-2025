@@ -16,6 +16,8 @@ led_test - Tests LED function, turning on for 10 seconds before turning off. Sim
 
 Servo - Small motor performs full range-of-motion, sweeping from minimum to maximum position.
 
+test code for Max30102 - Code for Max30102 Pulse Oximeter. Original code is for Arduino boards, so codebase was formatted manually. Needs to be 
+
 Twilio_distance - Proximity sensor measures depth, sends SMS message using Twilio if an object is within 20cm from the sensor. For privacy and reasons, I have replaced the API keys and phone numbers (from,to) with four asterisks
 
 
